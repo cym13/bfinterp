@@ -4,7 +4,7 @@
 def main():
     mem         = [0] * 30000
     mem_ptr     = 0
-    program     = "[.+]"
+    program     = input("Enter program: ")
     program_ptr = 0
     bracket_buf = []
     input_buf   = ""
@@ -38,7 +38,7 @@ def main():
             bracket_buf.append(program_ptr)
 
         elif cmd == "]":
-            if mem[mem_ptr] == 0:
+            if mem[mem_ptr] != 0:
                 program_ptr = bracket_buf[-1]
             else:
                 bracket_buf.pop()
