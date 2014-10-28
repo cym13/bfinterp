@@ -1,0 +1,35 @@
+Description
+===========
+
+This are little interpreter in brainfuck. It is my favourite "hello world"
+program when discovering a new programming language.
+
+These programs are real (yet simple) virtual machine. Of course they are not
+suitable to implement an operating system (it lacks an interrupt system) they
+manage their own (turing-machine-like) memory and dispose of their own set of
+opcodes (brainfuck instructions). They also link input and output to the
+hypervisor's stdin and stdout.
+
+Well, it's a cool thing to do !
+
+If you are willing to understand the code, I recommend the python or C
+version which are the most readable.
+
+The javascript version is not finnished yet (it lacks an instruction) and I
+don't plan on filling this blank in a near future.
+
+License
+=======
+
+These programs are under the GPLv3 License.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+Author
+======
+
+Main developper: Cédric Picard
+Email:           cedric.picard@efrei.net
+Twitter:         @Cym13
+GPG:             383A 76B9 D68D 2BD6 9D2B  4716 E3B9 F4FE 5CED 42CB
