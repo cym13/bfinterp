@@ -1,13 +1,13 @@
 Description
 ===========
 
-This are little interpreter in brainfuck. It is my favourite "hello world"
+This are little interpreter in Brainfuck. It is my favourite "hello world"
 program when discovering a new programming language.
 
 These programs are real (yet simple) virtual machine. Of course they are not
 suitable to implement an operating system (it lacks an interrupt system) they
 manage their own (turing-machine-like) memory and dispose of their own set of
-opcodes (brainfuck instructions). They also link input and output to the
+opcodes (Brainfuck instructions). They also link input and output to the
 hypervisor's stdin and stdout.
 
 Well, it's a cool thing to do !
@@ -17,6 +17,30 @@ version which are the most readable.
 
 The javascript version is not finnished yet (it lacks an instruction) and I
 don't plan on filling this blank in a near future.
+
+Important precision
+===================
+
+There are several versions of Brainfuck out there, some more hardcore than
+other.
+
+My favourite (ie: the one I implemented) has the following specs:
+
+- cyclic memory of 30000 cases (the case 29999 is at the left of the case 0)
+- cyclic values in a case corresponding to 1 octect (255 + 1 = 0)
+- the instruction '[' has no effect
+- the instruction ']' has the effect:
+      if the case currently pointed has value 0 then continue reading at the
+      corresponding '[', else continue reading at the next symbol
+
+When compared with the most recent Brainfuck article on wikipedia, one can
+see that '[' is said to have an effect. This is a new evolution that I
+disagree with as it reduces considerably the complexity of the language. One
+of the beauty of Brainfuck is that in its original version there was
+absolutely no way to prevent a symbol from being read. Each and every
+instruction was executed at least once. This was a marvellous challenge, and
+I can't see a valid reason to simplify what is a monument to the bravour and
+devotion of the lone coder fighting the obscurity of brainfuck code.
 
 License
 =======
