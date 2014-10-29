@@ -33,15 +33,6 @@ My favourite (ie: the one I implemented) has the following specs:
       if the case currently pointed has value 0 then continue reading at the
       corresponding '[', else continue reading at the next symbol
 
-When compared with the most recent Brainfuck article on wikipedia, one can
-see that '[' is said to have an effect. This is a new evolution that I
-disagree with as it reduces considerably the complexity of the language. One
-of the beauty of Brainfuck is that in its original version there was
-absolutely no way to prevent a symbol from being read. Each and every
-instruction was executed at least once. This was a marvellous challenge, and
-I can't see a valid reason to simplify what is a monument to the bravour and
-devotion of the lone coder fighting the obscurity of brainfuck code.
-
 Errata
 ======
 
