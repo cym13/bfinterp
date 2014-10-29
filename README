@@ -15,7 +15,7 @@ Well, it's a cool thing to do !
 If you are willing to understand the code, I recommend the python or C
 version which are the most readable.
 
-The javascript version is not finnished yet (it lacks an instruction) and I
+The javascript version is not finished yet (it lacks an instruction) and I
 don't plan on filling this blank in a near future.
 
 Important precision
@@ -41,6 +41,17 @@ absolutely no way to prevent a symbol from being read. Each and every
 instruction was executed at least once. This was a marvellous challenge, and
 I can't see a valid reason to simplify what is a monument to the bravour and
 devotion of the lone coder fighting the obscurity of brainfuck code.
+
+Errata
+======
+
+tl;dr: Wikipedia was right.
+
+I was informed by Urban Müller that I misunderstood the first version of
+brainfuck in which '[' has the effect expected at the beginning of a
+while(*ptr) loop and ']' only closes the loop.
+
+More informations here: https://gist.github.com/rdebath/0ca09ec0fdcf3f82478f
 
 License
 =======
