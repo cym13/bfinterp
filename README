@@ -53,6 +53,9 @@ while(*ptr) loop and ']' only closes the loop.
 
 More informations here: https://gist.github.com/rdebath/0ca09ec0fdcf3f82478f
 
+Also, the version presented here is not Turing-complete as the loop construct
+does not allow you to build every choice possible of subprograms.
+
 License
 =======
 
