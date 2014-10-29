@@ -38,9 +38,9 @@ Errata
 
 tl;dr: Wikipedia was right.
 
-I was informed by Urban Müller that I misunderstood the first version of
-brainfuck in which '[' has the effect expected at the beginning of a
-while(*ptr) loop and ']' only closes the loop.
+I was informed by rdebath that I misunderstood the first version of brainfuck
+in which '[' has the effect expected at the beginning of a while(*ptr) loop
+and ']' only closes the loop.
 
 More informations here: https://gist.github.com/rdebath/0ca09ec0fdcf3f82478f
 
